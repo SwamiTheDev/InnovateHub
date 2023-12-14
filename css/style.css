@@ -122,3 +122,90 @@
     transition: transform 0.3s ease, color 200ms ease-in-out;
   }
 }
+
+/*----------------*/
+/*=====SECTION - HERO=====*/
+.hero__content {
+  max-width: 35.625rem;
+}
+
+.hero__img-box {
+  justify-self: end;
+  margin-right: -10.313rem;
+  z-index: -1;
+  animation: moveToTop 1s ease-in-out;
+}
+
+.hero__title {
+  padding-top: 7rem;
+  margin-bottom: 3rem;
+  animation: moveToLeft 1s ease-in-out;
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.hero__desc {
+  margin-bottom: 3rem;
+  animation: moveToRight 1s ease-in-out;
+}
+
+.hero__btn:link,
+.hero__btn:visited {
+  display: inline-block;
+  font: var(--fw-extraBold) var(--font-body) / 1.22 "Commissioner";
+  color: var(--color-white);
+  background: var(--color-red);
+  padding: 1.563rem 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__btn:hover {
+  background: #ff9393;
+
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.hero__btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.0001);
+}
+
+/*----------------*/

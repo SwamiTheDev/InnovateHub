@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="css/common.css">
     <title>InnovateHub</title>
 </head>
 
@@ -45,6 +46,30 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-box grid-layout">
+                <div class="hero__content grid-area">
+                    <h1 class="hero__title font-h1">
+                        Branding & website design agency
+                    </h1>
+                    <p class="hero__desc font-body">
+                        We specialize in visual storytelling by creating cohesive brand
+                        and website design solutions for small businesses, giving lasting
+                        impressions to audiences in a digital world.
+                    </p>
+                    <a class="hero__btn" href="#">Learn More</a>
+                </div>
+                <picture class="hero__img-box grid-area">
+                    <source media="(max-width: 23.75rem)" srcset="../images/mobile/image-hero.jpg" />
+                    <source media="(max-width: 41.25rem)" srcset="../images/mobile_/image-hero.jpg" />
+                    <source media="(max-width: 58.75rem)" srcset="../images/tablet/image-hero.jpg" />
+                    <img class="hero__img" src="./images/desktop/image-hero.jpg" aria-hidden="true" alt="" />
+                </picture>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
