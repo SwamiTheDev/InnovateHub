@@ -1,0 +1,103 @@
+@media (max-width: 58.75em) {
+  /* HEADER */
+  .header::after {
+    width: 27.375rem;
+    height: 11.125rem;
+    margin-right: -2.5rem;
+  }
+
+  .nav__menu-box {
+    gap: 1.75rem;
+  }
+
+  .nav__list {
+    gap: 1.25rem;
+  }
+
+  .nav__btn:link,
+  .nav__btn:visited {
+    padding: 1.438rem 1.125rem 1.375rem 1.188rem;
+  }
+}
+
+@media (max-width: 41.25em) {
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Menu mobile */
+  .nav__link:link,
+  .nav__link:visited {
+    color: var(--color-white);
+  }
+
+  .nav__btn:link,
+  .nav__btn:visited {
+    background: var(--color-red);
+    margin-top: 1.5rem;
+    padding: 1.438rem 2.75rem 1.313rem 2.813rem;
+  }
+
+  .nav__menu-box {
+    display: block;
+    text-align: center;
+    background: var(--color-bgBlack);
+    padding: 2rem 1.625rem 1.75rem 1.688rem;
+    position: absolute;
+    top: 6.875rem;
+    right: 1.625rem;
+  }
+
+  [data-menu="button"] {
+    display: block;
+  }
+
+  [data-menu="button"] > svg:last-child {
+    display: none;
+  }
+
+  [data-menu="menu-list"] {
+    display: none;
+  }
+
+  /* manipulating mobile menu with active class */
+  [data-menu="button"].active > svg:first-child {
+    display: none;
+  }
+
+  [data-menu="menu-list"].active {
+    display: block;
+    animation: show-up 0.3s forwards;
+  }
+
+  [data-menu="button"].active > svg:last-child {
+    display: block;
+  }
+
+  /* small animation for the mobile menu */
+  @keyframes show-up {
+    from {
+      transform: translateY(-40px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 32.5em) {
+}
+
+@media (max-width: 20em) {
+  .nav__btn:link,
+  .hero__btn:link,
+  .footer__btn:link {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav__menu-box {
+    top: 5rem;
+    right: 1rem;
+  }
+}
