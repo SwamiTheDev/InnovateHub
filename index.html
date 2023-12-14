@@ -4,11 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>InnovateHub</title>
 </head>
 
 <body>
 
+    <header>
+        <a href="#main" class="skip-content font-body"> Skip to main content. </a>
+
+        <div class="header-box grid-area">
+            <a href="/" class="header__logo">
+                InnovateHub
+            </a>
+            <nav class="nav">
+                <button data-menu="button" aria-expanded="false" aria-controls="menu" aria-label="menu" type="button">
+                    <svg width="24" height="18" aria-hidden="true">
+                        <g fill="#000" fill-rule="evenodd" opacity=".5">
+                            <path d="M0 0h24v2H0zM0 8h24v2H0zM0 16h24v2H0z" />
+                        </g>
+                    </svg>
+                    <span class="sr-only">menu</span>
+                    <svg aria-hidden="true" width="20" height="20">
+                        <g fill-rule="evenodd" opacity=".5">
+                            <path d="M2.222.808l16.97 16.97-1.414 1.414L.808 2.222z" />
+                            <path d="M.808 17.778L17.778.808l1.414 1.414-16.97 16.97z" />
+                        </g>
+                    </svg>
+                </button>
+
+                <div class="nav__menu-box" data-menu="menu-list" id="menu">
+                    <ul class="nav__list grid-layout" data-menu="list">
+                        <li><a class="nav__link" href="#about">About</a></li>
+                        <li><a class="nav__link" href="#service">Service</a></li>
+                        <li><a class="nav__link" href="#project">Projects</a></li>
+                    </ul>
+                    <a class="nav__btn btn-font" href="#schedule">Schedule a Call</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>

@@ -1,0 +1,124 @@
+/* header Start */
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: start;
+  padding-top: 3.5rem;
+}
+
+.header__logo {
+  transition: transform 1s, opacity 1s;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.header::after {
+  content: "";
+  width: 44.063rem;
+  height: 11.125rem;
+  background-color: var(--color-red);
+  grid-area: 1 / 1;
+  justify-self: end;
+  margin-right: -10.313rem;
+  z-index: -1;
+}
+
+.nav__menu-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav__list {
+  /* set with display grid, so sibling elements don't move */
+  grid-template-columns: 2.875rem 3.313rem 3.75rem;
+  gap: 2rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  display: inline-block;
+  font: var(--fw-regular) 1rem/2 "Commissioner";
+  color: var(--color-white);
+  transition: transform 1s, opacity 1s;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  font-weight: var(--fw-bold);
+}
+
+.nav__btn:link,
+.nav__btn:visited {
+  display: inline-block;
+  color: var(--color-white);
+  font-weight: var(--fw-extraBold);
+  background: var(--color-bgBlack);
+  padding: 1.438rem 2.75rem 1.313rem 2.813rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__btn:hover {
+  background: #434356;
+  font-weight: var(--fw-extraBold);
+
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.0001);
+}
+
+/* Menu mobile */
+[data-menu="button"] {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Header end */
+
+/* Animation for javascript*/
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(-8rem);
+}
+
+.skip-content {
+  background-color: var(--color-bgBlack);
+  color: var(--color-white);
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 48px;
+  padding: 1.25rem 2.5rem;
+  text-decoration: 0.1rem solid;
+  transform: translateX(-200%);
+  z-index: 800;
+  opacity: 1;
+}
+
+.skip-content:focus,
+.skip-content:focus-visible {
+  outline: 0.25rem solid var(--color-darkCyan);
+  outline-offset: 0.25rem;
+  transform: translate(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skip-content {
+    transition: transform 0.3s ease, color 200ms ease-in-out;
+  }
+}
