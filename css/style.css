@@ -47,6 +47,13 @@
 
 .header__logo {
   transition: transform 1s, opacity 1s;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: var(--color-darkCyan);
+  -webkit-transition: transform 1s, opacity 1s;
+  -moz-transition: transform 1s, opacity 1s;
+  -ms-transition: transform 1s, opacity 1s;
+  -o-transition: transform 1s, opacity 1s;
 }
 
 .header::after {
@@ -63,6 +70,7 @@
 .nav__menu-box {
   display: flex;
   align-items: center;
+  /* background-color: var(--color-red); */
   gap: 3rem;
 }
 
@@ -70,6 +78,7 @@
   /* set with display grid, so sibling elements don't move */
   grid-template-columns: 2.875rem 3.313rem 3.75rem;
   gap: 2rem;
+  /* padding-left: 35px; */
 }
 
 .nav__link:link,
@@ -512,4 +521,22 @@
 .footer__btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.0001);
+}
+
+.__dev_details {
+  font-family: "Commissioner";
+  text-align: center;
+  font-size: larger;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 15px;
+  background: rgba(235, 234, 234, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.__portfolio_link {
+  color: var(--color-red);
 }
