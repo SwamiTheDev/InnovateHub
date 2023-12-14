@@ -279,3 +279,69 @@
 }
 
 /*----------------*/
+
+/*=====SECTION - APPROACH=====*/
+.approach {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.approach-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 7.813rem;
+  justify-self: end;
+  max-width: 82rem;
+  padding: 0 2.5rem;
+  margin-right: 4.125rem;
+}
+
+.bg {
+  justify-self: end;
+  width: 55.938rem;
+  height: 68.75rem;
+  background: var(--color-red);
+  margin-top: -12.5rem;
+}
+
+.approach__title {
+  justify-self: start;
+  max-width: 33.75rem;
+  padding-top: 12.5rem;
+  z-index: 2;
+}
+
+.approach__list {
+  align-content: start;
+  row-gap: 3.5rem;
+  justify-self: end;
+
+  max-width: 31.5rem;
+  z-index: 2;
+}
+
+.approach__item {
+  justify-content: start;
+  height: 12.25rem;
+}
+
+.approach__number {
+  opacity: 0.25;
+  color: var(--color-white);
+}
+
+.approach__sub {
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+}
+
+.approach__desc {
+  color: var(--color-white);
+}
+
+.approach__item-box {
+  align-self: end;
+  padding-left: 3.75rem;
+}
+
+/*----------------*/
