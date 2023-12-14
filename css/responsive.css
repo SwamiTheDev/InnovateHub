@@ -3,6 +3,14 @@
     font-size: 4.3rem;
   }
 
+  .header__logo {
+    /* color: red !important; */
+    font-size: 55px;
+    /* padding-top: 5px; */
+    color: var(--color-bgBlack);
+    letter-spacing: 1px;
+    font-family: "Commissioner";
+  }
   .approach__item-box {
     align-content: start;
     gap: 1rem;
@@ -28,7 +36,20 @@
     max-width: 48.75rem;
   }
 }
-
+@media (min-width: 67.6em) {
+  .header__logo {
+    /* color: red !important; */
+    font-size: 35px;
+    border-bottom: 5px red solid;
+    /* padding-top: 5px; */
+    color: var(--color-bgBlack);
+    letter-spacing: 1px;
+    font-family: "Commissioner";
+  }
+  .spane {
+    color: var(--color-red);
+  }
+}
 @media (max-width: 58.75em) {
   /* HEADER */
   .header::after {
@@ -36,7 +57,11 @@
     height: 11.125rem;
     margin-right: -2.5rem;
   }
-
+  .header__logo {
+    /* color: red !important; */
+    font-size: 40px;
+    font-family: "Commissioner";
+  }
   .nav__menu-box {
     gap: 1.75rem;
   }
@@ -227,6 +252,11 @@
   }
 }
 
+@media (min-width: 375) {
+  .spane {
+    display: inline !important;
+  }
+}
 @media (max-width: 41.25em) {
   .container {
     padding: 0 1.5rem;
@@ -237,7 +267,18 @@
     padding-bottom: 2.5rem;
     position: relative;
   }
-
+  .header__logo {
+    /* color: red !important; */
+    font-size: 25px;
+    /* padding-top: 5px; */
+    color: var(--color-red);
+    letter-spacing: 1px;
+    font-family: "Commissioner";
+  }
+  .spane {
+    color: var(--color-bgBlack);
+    display: inline !important;
+  }
   .header-box {
     padding: 0;
   }
@@ -438,7 +479,36 @@
   .hero__content {
     text-align: initial;
   }
-
+  header {
+    width: 100% !important;
+    height: 70px;
+    padding-top: 15px !important;
+  }
+  .spane {
+    color: var(--color-bgBlack);
+    display: none !important;
+    /* display: inline; */
+  }
+  .header__logo {
+    /* color: red !important; */
+    font-size: 15px;
+    display: inline;
+    /* padding-top: 5px; */
+    color: var(--color-red);
+    letter-spacing: 1px;
+    border-bottom: 5px black solid;
+    font-family: "Commissioner";
+  }
+  .container {
+    max-width: 74.375rem !important;
+    /* padding: 0 2.5rem; */
+    margin: 0 auto;
+  }
+  .hero__title {
+    font-size: 50px !important;
+    margin-top: 65%;
+    line-height: 60px !important;
+  }
   .design {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -515,18 +585,29 @@
   .footer__btn:link {
     padding: 1rem 1.5rem;
   }
-
+  .header__logo {
+    border-bottom: 4px dark solid;
+  }
   .nav__menu-box {
     top: 5rem;
     right: 1rem;
   }
-
+  .spane {
+    color: var(--color-bgBlack);
+  }
   .hero-box {
     margin-bottom: 3.75rem;
   }
-
+  header {
+    width: 100% !important;
+    height: 70px;
+    padding-top: 15px !important;
+  }
   .hero__title {
-    font-size: 1.5rem;
+    /* color: blue !important; */
+    font-size: 50px !important;
+    margin-top: 65%;
+    line-height: 60px !important;
   }
 
   .hero__btn:link {
