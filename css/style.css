@@ -209,3 +209,73 @@
 }
 
 /*----------------*/
+
+/*=====SECTION - DESIGN=====*/
+.design {
+  max-width: 90rem;
+  margin: 0 auto;
+  grid-template-columns: 4fr 3.84fr;
+  color: var(--color-white);
+}
+
+.design__img {
+  height: 61.5rem;
+  object-fit: cover;
+  object-position: right;
+}
+
+.design__content {
+  height: 49rem;
+  background: var(--color-bgBlack);
+  padding: 12.5rem 6.625rem 12.5rem 9.625rem;
+  position: relative;
+}
+
+.design__content::before {
+  content: "";
+  width: 8.438rem;
+  height: 3.813rem;
+  background: url(../images/desktop/bg-pattern-wave-red.svg) no-repeat;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.design__title {
+  margin-bottom: 3rem;
+}
+
+.design__desc {
+  margin-bottom: 3rem;
+}
+
+.design__title--red {
+  color: var(--color-red);
+}
+
+.design__link:link,
+.design__link:visited {
+  justify-content: start;
+  gap: 0.5rem;
+  font: var(--fw-extraBold) 1.125rem/1.22 "Commissioner";
+  color: var(--color-red);
+  transition: all 0.3s ease-in-out;
+
+  max-width: 7.75rem;
+}
+
+.design__link::after {
+  content: "";
+  width: 100%;
+  height: 0.125rem;
+  background: currentColor;
+  grid-area: 2 / 1;
+}
+
+.design__link:hover,
+.design__link:active {
+  color: #ff9393;
+}
+
+/*----------------*/
